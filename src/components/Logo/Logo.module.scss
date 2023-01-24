@@ -1,0 +1,41 @@
+@use '../_styles/mixins' as mixins;
+@use '../_styles/colors';
+
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+.img {
+  width: 40px;
+  height: 35px;
+  // @include mixins.mediaquery ("tablet", min) {
+  //   top: -11px;
+  //   width: 90px;
+  // }
+  // @include mixins.mediaquery ("desktop", min) {
+  //   top: -11px;
+  //   width: 144px;
+  // }
+}
+.name {
+  display: flex;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--extra-color);
+  margin-left: 8px;
+  // @include mixins.mediaquery ("tablet", min) {
+  //   font-size: 15px;
+  //   margin-top: 16px;
+  //   margin-left: 42px;
+  // }
+  // @include mixins.mediaquery ("desktop", min) {
+  //   font-size: 19px;
+  //   margin-top: 38px;
+  //   margin-left: 75px;
+  // }
+}
+.text {
+  color: var(--primary-text-color);
+  margin-left: 8px;
+}

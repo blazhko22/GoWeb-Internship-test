@@ -1,0 +1,9 @@
+@use "./components/_styles/default";
+@use "./components/_styles/fonts";
+@use "./components/_styles/mixins";
+@use "./components/_styles/placeholders";
+@use "./components/_styles/colors";
+
+body {
+    background-color: var(--background);
+}

@@ -1,0 +1,13 @@
+.box {
+  display: block;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+      var(--background-imege),
+      var(--background-imege)), 
+      url(../../images/background-box.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

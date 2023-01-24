@@ -1,0 +1,50 @@
+@use "../_styles/default";
+@use "../_styles/fonts";
+@use "../_styles/mixins";
+@use "../_styles/placeholders";
+@use "../_styles/colors";
+
+.hero {
+  width: 215px;
+  padding: 20px 0;
+  @include mixins.mediaquery ("tablet", min) {
+    width: 340px;
+    padding: 60px 0;
+  } 
+  @include mixins.mediaquery ("desktop", min) {
+    width: 500px;
+    padding: 180px 0;
+  }
+}
+.title {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+  color: var(--text-normal);
+  & .title_text {
+    color: var(--button);
+  }
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 40px;
+  }
+  @include mixins.mediaquery ("desktop", min) {
+    font-size: 57px;
+  }
+}
+.text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 160%;
+  color: var(--text-contrast);
+  margin-top: 10px;
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 15px;
+  }
+  @include mixins.mediaquery ("desktop", min) {
+    font-size: 18px;
+  }
+}

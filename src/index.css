@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.rsWidgetButton {
+  position: absolute;
+  right: 195px;
+  top: 35px;
+  padding: 5px 10px;
+  border: solid 2px #1b75bb;
+  border-radius: 5px;
+  background-color: #1b75bb;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+.rsWidgetButton:hover {
+  background-color: #ffffff;
+  color: #1b75bb;
+}
+@media only screen and (max-width: 1600px) {
+  .rsWidgetButton {
+    right: 60px;
+    top: 35px;
+    
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .rsWidgetButton {
+    right: 60px;
+    top: 17px;
+    
+  }
+}
+@media only screen and (max-width: 500px) {
+  .rsWidgetButton {
+    right: 35%;
+    top: 57px;
+  }
+}

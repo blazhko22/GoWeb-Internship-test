@@ -1,0 +1,54 @@
+@use "../_styles/default";
+@use "../_styles/mixins";
+@use "../_styles/colors";
+
+// .header {
+//   background-color: var(--background-header);
+//   height: 100px;
+//   @include mixins.mediaquery ("tabletPhone", min) {
+//     height: 60px;
+//   }
+//   @include mixins.mediaquery ("desktop", min) {
+//     height: 100px;
+//   }
+// }
+// .header_box {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   @include mixins.mediaquery ("tabletPhone", min) {
+//     flex-direction: row;
+//   }
+// }
+// .box {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 25px;
+//   width: 100%;
+//   @include mixins.mediaquery ("tabletPhone", min) {
+//     justify-content: flex-start;
+//   }
+// }
+// .button {
+//   padding: 5px 30px;
+//   height: fit-content;
+//   border: none;
+//   background-color: var(--button);
+//   border-radius: 5px;
+//   cursor: pointer;
+//   & svg {
+//     fill: var(--background);
+//     @include mixins.mediaquery ("desktop", min) {
+//       width: 30px;
+//       height: 30px;
+//     }
+//   }
+//   &:hover {
+//     background-color: var(--background);
+//     transition: all 250ms linear;
+//     & svg {
+//       fill: var(--button);
+//     }
+//   }
+  
+// }

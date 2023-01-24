@@ -1,0 +1,56 @@
+@use '../_styles/colors';
+@use '../_styles/mixins' as mixins;
+@use "../_styles/default";
+@use "../_styles/fonts";
+
+// .nav {
+//   margin-left: 10px;
+//   margin-right: 10px;
+//   @include mixins.mediaquery ("tabletPhone", min) {
+//     margin-left: 20px;
+//   }
+//   @include mixins.mediaquery ("tablet", min) {
+//     margin-left: 50px;
+//   }
+//   @include mixins.mediaquery ("desktop", min) {
+//     margin-left: 100px;
+//   }
+// }
+// .list {
+//   display: flex;
+//   margin-top: 15px;
+//   @include mixins.mediaquery ("desktop", min) {
+//     margin-top: 37px;
+//   }
+// }
+// .item {
+//   margin-left: 5px;
+//   &:first-child {
+//     margin-left: 0;
+//   }
+//   @include mixins.mediaquery ("tabletPhone", min) {
+//     margin-left: 10px;
+//   }
+//   @include mixins.mediaquery ("desktop", min) {
+//     margin-left: 20px;
+//   }
+//   & a {
+//     // font-family: 'Gelasio';
+//     font-style: normal;
+//     // font-weight: 500;
+//     font-size: 12px;
+//     line-height: 150%;
+//     color: var(--text-normal);
+//     transition: all 250ms linear;
+//     &:hover {
+//       color: var(--button)
+//     }
+//     @include mixins.mediaquery ("tablet", min) {
+//       font-size: 15px;
+//     }
+//     @include mixins.mediaquery ("desktop", min) {
+//       font-size: 21px;
+//     }
+//   }
+  
+// }

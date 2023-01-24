@@ -1,0 +1,13 @@
+@use "../_styles/mixins" as mixins;
+
+.container {
+        max-width: 1360px;
+        padding: 0 28px;
+        margin: 0 auto;
+    @include mixins.mediaquery ("tablet", min) {
+        padding: 0 32px;
+    }
+    @include mixins.mediaquery ("phone", min) {
+        padding: 0 20px;
+    }
+}
