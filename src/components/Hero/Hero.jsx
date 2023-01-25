@@ -1,5 +1,6 @@
 import React from "react";
 import  Container from "../Container";
+import sprite from '../../images/icons.svg';
 import s from './Hero.module.scss';
 
 
@@ -11,7 +12,7 @@ function Hero() {
                 <p className={s.text}>We provide world class financial assistance</p>
                 <button className={s.btn}>
                     <svg className={s.svg} alt="Partners" width="9" height="18">
-                        <use href={'../../images/fa-solid_angle-right.svg'}></use>
+                        <use href={`${sprite}#icon-right`}></use>
                     </svg> 
                     Read More
                 </button>
