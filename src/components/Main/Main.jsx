@@ -1,6 +1,6 @@
 import React from "react";
 // import s from './Main.module.scss';
-import Container from '../Container';
+import Hero from '../Hero';
 import AboutUs from "../AboutUs";
 import Gallery from "../Gallery";
 import TopProducts from "../TopProducts";
@@ -8,12 +8,13 @@ import OurPartners from "../OurPartners";
 
 
 function Main() {
-    return <Container>
+    return <main>
+        <Hero />
         <AboutUs />
         <Gallery />
         <TopProducts />
         <OurPartners />
-    </Container>
+    </main>
 }
 
 export default Main;

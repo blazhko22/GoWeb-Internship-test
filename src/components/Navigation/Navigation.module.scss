@@ -3,9 +3,8 @@
 @use "../_styles/default";
 @use "../_styles/fonts";
 
-// .nav {
-//   margin-left: 10px;
-//   margin-right: 10px;
+.nav {
+    margin-top: 16px;
 //   @include mixins.mediaquery ("tabletPhone", min) {
 //     margin-left: 20px;
 //   }
@@ -15,15 +14,17 @@
 //   @include mixins.mediaquery ("desktop", min) {
 //     margin-left: 100px;
 //   }
-// }
-// .list {
-//   display: flex;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
 //   margin-top: 15px;
 //   @include mixins.mediaquery ("desktop", min) {
-//     margin-top: 37px;
+    // margin-top: 37px;
 //   }
-// }
-// .item {
+}
+.item {
+    // color: var(--extra-color);
 //   margin-left: 5px;
 //   &:first-child {
 //     margin-left: 0;
@@ -34,7 +35,11 @@
 //   @include mixins.mediaquery ("desktop", min) {
 //     margin-left: 20px;
 //   }
-//   & a {
+  & a {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--primary-text-color);
 //     // font-family: 'Gelasio';
 //     font-style: normal;
 //     // font-weight: 500;
@@ -51,6 +56,6 @@
 //     @include mixins.mediaquery ("desktop", min) {
 //       font-size: 21px;
 //     }
-//   }
+  }
   
-// }
+}

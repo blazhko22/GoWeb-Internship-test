@@ -1,9 +1,9 @@
 import React from "react";
 import Title from '../Title';
 import s from './TopProducts.module.scss';
-import img1 from '../../images/gallery1.jpg';
-import img2 from '../../images/gallery2.jpg';
-import img3 from '../../images/gallery3.jpg';
+// import img1 from '../../images/gallery1.jpg';
+// import img2 from '../../images/gallery2.jpg';
+// import img3 from '../../images/gallery3.jpg';
 
 function TopProducts() {
     return <div className={s.gallery}>
@@ -11,7 +11,7 @@ function TopProducts() {
         <ul className={s.list}>
             <li className={s.item}>
                 <div className={s.item_box}>
-                    <img className={s.img} src={img1} alt="" />
+                    {/* <img className={s.img} src={img1} alt="" /> */}
                     <div className={s.box_text}>
                         <span className={s.top}>Hot sale</span>
                         <span className={s.action}>Action</span>
@@ -24,7 +24,7 @@ function TopProducts() {
             </li>
             <li className={s.item}>
                 <div className={s.item_box}>
-                    <img className={s.img} src={img2} alt="" />
+                    {/* <img className={s.img} src={img2} alt="" /> */}
                     <div className={s.box_text}>
                         <span className={s.top}>Hot sale</span>
                         <span className={s.action}>Action</span>
@@ -37,7 +37,7 @@ function TopProducts() {
             </li>
             <li className={s.item}>
                 <div className={s.item_box}>
-                    <img className={s.img} src={img3} alt="" />
+                    {/* <img className={s.img} src={img3} alt="" /> */}
                     <div className={s.box_text}>
                         <span className={s.top}>Hot sale</span>
                         <span className={s.action}>Action</span>

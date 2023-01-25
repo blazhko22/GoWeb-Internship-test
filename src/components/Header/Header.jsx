@@ -7,11 +7,9 @@ import s from './Header.module.scss';
 function Header() {
     return <header className={s.header}>
         <Container>
-            <div className={s.header_box}>
-                <div className={s.box}>
-                   <Logo />
-                   <Navigation />  
-                </div>                
+            <div className={s.header_box}>                
+                <Logo />
+                <Navigation />                                 
             </div>
         </Container>
     </header>

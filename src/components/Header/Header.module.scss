@@ -2,7 +2,9 @@
 @use "../_styles/mixins";
 @use "../_styles/colors";
 
-// .header {
+.header {
+    position: fixed;
+    width: 100%;
 //   background-color: var(--background-header);
 //   height: 100px;
 //   @include mixins.mediaquery ("tabletPhone", min) {
@@ -11,15 +13,16 @@
 //   @include mixins.mediaquery ("desktop", min) {
 //     height: 100px;
 //   }
-// }
-// .header_box {
+}
+.header_box {
+    padding: 22px 0;
 //   display: flex;
 //   flex-direction: column;
 //   align-items: center;
 //   @include mixins.mediaquery ("tabletPhone", min) {
 //     flex-direction: row;
 //   }
-// }
+}
 // .box {
 //   display: flex;
 //   justify-content: space-between;

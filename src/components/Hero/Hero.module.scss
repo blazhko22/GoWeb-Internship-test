@@ -5,46 +5,61 @@
 @use "../_styles/colors";
 
 .hero {
-  width: 215px;
-  padding: 20px 0;
-  @include mixins.mediaquery ("tablet", min) {
-    width: 340px;
-    padding: 60px 0;
-  } 
-  @include mixins.mediaquery ("desktop", min) {
-    width: 500px;
-    padding: 180px 0;
-  }
+  display: block;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+      var(--background-imege),
+      var(--background-imege)), 
+      url(../../images/home/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 104px;
+  // width: 215px;
+  // padding: 20px 0;
+  // @include mixins.mediaquery ("tablet", min) {
+  //   width: 340px;
+  //   padding: 60px 0;
+  // } 
+  // @include mixins.mediaquery ("desktop", min) {
+  //   width: 500px;
+  //   padding: 180px 0;
+  // }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .title {
-  font-family: 'Verdana';
-  font-style: normal;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 120%;
-  color: var(--text-normal);
-  & .title_text {
-    color: var(--button);
-  }
-  @include mixins.mediaquery ("tablet", min) {
-    font-size: 40px;
-  }
-  @include mixins.mediaquery ("desktop", min) {
-    font-size: 57px;
-  }
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  color: var(--primary-text-color);
+  width: 241px;
+  // @include mixins.mediaquery ("tablet", min) {
+  //   font-size: 40px;
+  // }
+  // @include mixins.mediaquery ("desktop", min) {
+  //   font-size: 57px;
+  // }
 }
 .text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 160%;
-  color: var(--text-contrast);
-  margin-top: 10px;
-  @include mixins.mediaquery ("tablet", min) {
-    font-size: 15px;
-  }
-  @include mixins.mediaquery ("desktop", min) {
-    font-size: 18px;
-  }
+  // font-family: 'Roboto';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 11px;
+  // line-height: 160%;
+  // color: var(--text-contrast);
+  // margin-top: 10px;
+  // @include mixins.mediaquery ("tablet", min) {
+  //   font-size: 15px;
+  // }
+  // @include mixins.mediaquery ("desktop", min) {
+  //   font-size: 18px;
+  // }
 }

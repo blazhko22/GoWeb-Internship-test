@@ -4,12 +4,20 @@ import s from './Hero.module.scss';
 
 
 function Hero() {
-    return <Container> 
-        <div className={s.hero}>
-            <h1 className={s.title}>Be with us feel like <span className={s.title_text}>home</span>.</h1>
-            <p className={s.text}>Pet-friendly hotels are becoming increasingly popular; appealing to travellers who can’t bear to be parted.</p>
-        </div>
-    </Container>
+    return <div className={s.hero}>
+        <Container> 
+            <div className={s.box}>
+                <h2 className={s.title}>The Sky Is The Limit</h2>
+                <p className={s.text}>We provide world class financial assistance</p>
+                <button className={s.btn}>
+                    <svg className={s.svg} alt="Partners" width="9" height="18">
+                        <use href={'../../images/fa-solid_angle-right.svg'}></use>
+                    </svg> 
+                    Read More
+                </button>
+            </div>
+        </Container>
+    </div>
 }
 
 export default Hero;

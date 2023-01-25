@@ -1,12 +1,12 @@
 import s from './App.module.scss';
-import Box from './components/Box';
+import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className={s.App}>
-      <Box />
+      <Header />
       <Main />
       <Footer />
     </div>
