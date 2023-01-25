@@ -1,19 +1,20 @@
 import React from "react";
 // import s from './Main.module.scss';
 import Hero from '../Hero';
-import AboutUs from "../AboutUs";
-import Gallery from "../Gallery";
-import TopProducts from "../TopProducts";
-import OurPartners from "../OurPartners";
-
+import Solutions from "../Solutions";
+import BusinessCases from "../BusinessCases";
+import Blog from "../Blog";
+import Team from "../Team";
+import Form from "../Form";
 
 function Main() {
     return <main>
         <Hero />
-        <AboutUs />
-        <Gallery />
-        <TopProducts />
-        <OurPartners />
+        <Solutions />
+        <BusinessCases />
+        <Blog /> 
+        <Team />
+        <Form />
     </main>
 }
 

@@ -1,0 +1,46 @@
+@use "../_styles/default";
+@use "../_styles/mixins";
+@use "../_styles/colors";
+@use "../_styles/fonts";
+
+.box {
+    background-color: var(--form-color);
+}
+.box_form {
+    padding-top: 51px;
+    padding-bottom: 25px;
+}
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--secondary-text-color);
+    margin-bottom: 69px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    margin-top: 16px;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.input {
+    padding: 16px 8px;
+    width: 100%;
+    background-color: var(--background);
+    border: 1px solid var(--form-border);
+    border-radius: 5px;
+}
+.btn {
+    color: var(--primary-text-color);
+    width: 155px;
+    margin-top: 24px;
+    padding: 16px 56px;
+    background-color: var(--extra-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
