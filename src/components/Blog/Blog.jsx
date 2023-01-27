@@ -5,7 +5,7 @@ import s from './Blog.module.scss';
 // import sprite from '../../images/icons.svg';
 
 function Blog() {
-    return <div className={s.blog}>
+    return <div id="blog" className={s.blog}>
     <div className={s.blog_img}>
       <img alt="Blog" 
         src={blog}

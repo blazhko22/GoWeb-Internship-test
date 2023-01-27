@@ -3,15 +3,22 @@
 
 .logo {
   display: flex;
+  align-items: center;
+  opacity: 0.9;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: scale(1.025);
+    transition-duration: 500ms;
+    opacity: 1;
+  }
 }
 .img {
-  width: 40px;
-  height: 35px;
-  // @include mixins.mediaquery ("tablet", min) {
-  //   top: -11px;
-  //   width: 90px;
-  // }
+  
+  @include mixins.mediaquery ("tablet", min) {
+    width: 260px;
+    height: 40px;
+  }
   // @include mixins.mediaquery ("desktop", min) {
   //   top: -11px;
   //   width: 144px;

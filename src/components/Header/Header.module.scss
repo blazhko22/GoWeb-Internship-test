@@ -5,53 +5,23 @@
 .header {
     position: fixed;
     width: 100%;
-//   background-color: var(--background-header);
-//   height: 100px;
-//   @include mixins.mediaquery ("tabletPhone", min) {
-//     height: 60px;
-//   }
+    z-index: 2;
 //   @include mixins.mediaquery ("desktop", min) {
 //     height: 100px;
 //   }
 }
+.coloredHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--background-header);
+}
 .header_box {
     padding: 22px 0;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   @include mixins.mediaquery ("tabletPhone", min) {
-//     flex-direction: row;
-//   }
+    @include mixins.mediaquery ("tablet", min) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
 }
-// .box {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-bottom: 25px;
-//   width: 100%;
-//   @include mixins.mediaquery ("tabletPhone", min) {
-//     justify-content: flex-start;
-//   }
-// }
-// .button {
-//   padding: 5px 30px;
-//   height: fit-content;
-//   border: none;
-//   background-color: var(--button);
-//   border-radius: 5px;
-//   cursor: pointer;
-//   & svg {
-//     fill: var(--background);
-//     @include mixins.mediaquery ("desktop", min) {
-//       width: 30px;
-//       height: 30px;
-//     }
-//   }
-//   &:hover {
-//     background-color: var(--background);
-//     transition: all 250ms linear;
-//     & svg {
-//       fill: var(--button);
-//     }
-//   }
-  
-// }

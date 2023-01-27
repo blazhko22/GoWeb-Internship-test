@@ -7,7 +7,7 @@
     @include mixins.mediaquery ("tablet", min) {
         padding: 0 32px;
     }
-    @include mixins.mediaquery ("phone", min) {
+    @include mixins.mediaquery ("desktop", min) {
         padding: 0 20px;
     }
 }

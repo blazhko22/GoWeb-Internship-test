@@ -7,11 +7,11 @@ import Blog from "../Blog";
 import Team from "../Team";
 import Form from "../Form";
 
-function Main() {
+function Main({scrollTop}) {
     return <main>
         <Hero />
         <Solutions />
-        <BusinessCases />
+        <BusinessCases scrollTop={scrollTop}/>
         <Blog /> 
         <Team />
         <Form />

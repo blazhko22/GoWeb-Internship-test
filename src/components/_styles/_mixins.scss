@@ -1,14 +1,12 @@
 $breakpoints: (
   "phone": 320px,
-  // "tabletPhone": 500px,
   "tablet": 768px,
-  "desktop": 1200px,
+  "desktop": 1360px,
 );
 
 //Дублювальні CSS-змінні для доступу до брейкпойнтів через JS
 :root {
   --breakpoint-phone: #{map_get($breakpoints, "phone")};
-  // --breakpoint-phone: #{map_get($breakpoints, "tabletPhone")};
   --breakpoint-tablet: #{map_get($breakpoints, "tablet")};
   --breakpoint-desktop: #{map_get($breakpoints, "desktop")};
 }

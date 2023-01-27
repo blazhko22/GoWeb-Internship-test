@@ -5,9 +5,9 @@ import people from '../../images/home/people@2x.jpg';
 import s from './Solutions.module.scss';
 
 function Solutions() {
-    return <div className={s.solutions}>
+    return <div id="about" className={s.solutions}>
       <div className={s.solutions_img}>
-        <img alt="People" 
+        <img className={s.item_img} alt="People" 
           src={people}
         />
       </div>

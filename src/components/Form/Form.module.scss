@@ -4,11 +4,24 @@
 @use "../_styles/fonts";
 
 .box {
+    position: relative;
     background-color: var(--form-color);
+    @include mixins.mediaquery ("tablet", min) {
+        padding: 40px 0;
+        display: flex;
+    }
 }
+// .img {
+
+// }
 .box_form {
     padding-top: 51px;
     padding-bottom: 25px;
+    @include mixins.mediaquery ("tablet", min) {
+        padding-top: 32px;
+        padding-bottom: 33px;
+        width: 336px;
+    }
 }
 .title {
     font-weight: 400;
@@ -16,6 +29,11 @@
     line-height: 48px;
     color: var(--secondary-text-color);
     margin-bottom: 69px;
+    @include mixins.mediaquery ("tablet", min) {
+        font-size: 40px;
+        line-height: 54px;
+        margin-bottom: 24px;
+    }
 }
 .form {
     display: flex;
@@ -28,13 +46,23 @@
     }
 }
 .input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
     padding: 16px 8px;
     width: 100%;
     background-color: var(--background);
     border: 1px solid var(--form-border);
     border-radius: 5px;
+    @include mixins.mediaquery ("tablet", min) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 .btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
     color: var(--primary-text-color);
     width: 155px;
     margin-top: 24px;
@@ -50,4 +78,11 @@
     &:focus {
         background-color: var(--background-btn);
     }
+}
+.modal{
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    width:50%;
 }

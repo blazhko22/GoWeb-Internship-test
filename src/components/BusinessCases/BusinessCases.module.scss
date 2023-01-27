@@ -116,6 +116,9 @@
   color: var(--secondary-text-color);
   padding-top: 54px;
   padding-bottom: 40px;
+    @include mixins.mediaquery ("tablet", min) {
+      padding-top: 48px;
+    }
 }
 .box {
   display: flex;
@@ -126,6 +129,10 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 .title {
   font-weight: 400;
@@ -133,6 +140,10 @@
   line-height: 44px;
   margin-top: 16px;
   text-align: center;
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 .text {
   font-weight: 400;
@@ -140,13 +151,50 @@
   line-height: 22px;
   margin-top: 24px;
   text-align: center;
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 .list {
     margin-top: 31px;
+    @include mixins.mediaquery ("tablet", min) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 }
 .item {
-    margin-top: 8px;
-    &:first-child {
-        margin-top: 0;
+  margin-top: 8px;
+  cursor: pointer;
+  &:first-child {
+      margin-top: 0;
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  @include mixins.mediaquery ("tablet", min) {
+    margin-top: 0;
+    flex-basis: calc((100% - 20px) / 3);
+    &:nth-child(n+4) {
+      margin-top: 18px;
     }
+  }
+}
+
+// Modal style
+.lightboxContainer {
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  z-index: 6;
+}
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  z-index: 5;
 }

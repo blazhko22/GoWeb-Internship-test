@@ -18,12 +18,11 @@
   background-size: cover;
   padding-top: 160px;
   padding-bottom: 104px;
-  // width: 215px;
-  // padding: 20px 0;
-  // @include mixins.mediaquery ("tablet", min) {
-  //   width: 340px;
-  //   padding: 60px 0;
-  // } 
+  
+  @include mixins.mediaquery ("tablet", min) {
+    padding-top: 378px;
+    padding-bottom: 378px;
+  } 
   // @include mixins.mediaquery ("desktop", min) {
   //   width: 500px;
   //   padding: 180px 0;
@@ -41,9 +40,11 @@
   text-align: center;
   color: var(--primary-text-color);
   width: 241px;
-  // @include mixins.mediaquery ("tablet", min) {
-  //   font-size: 40px;
-  // }
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 55px;
+    line-height: 75px;
+    width: 505px;
+  }
   // @include mixins.mediaquery ("desktop", min) {
   //   font-size: 57px;
   // }
@@ -55,16 +56,11 @@
   text-align: center;
   color: var(--primary-text-color);
   margin-top: 16px;
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 11px;
-  // line-height: 160%;
-  // color: var(--text-contrast);
-  // margin-top: 10px;
-  // @include mixins.mediaquery ("tablet", min) {
-  //   font-size: 15px;
-  // }
+
+  @include mixins.mediaquery ("tablet", min) {
+    font-size: 40px;
+    line-height: 48px;
+  }
   // @include mixins.mediaquery ("desktop", min) {
   //   font-size: 18px;
   // }
