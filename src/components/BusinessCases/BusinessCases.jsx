@@ -67,7 +67,7 @@ function BusinessCases() {
                 <p className={s.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
                 <ul className={s.list}>
                   {images.map((image) => {
-                    return (<li className={s.item} onClick={() => setIsGalleryOpen(true)}>
+                    return (<li key={image.src} className={s.item} onClick={() => setIsGalleryOpen(true)}>
                       <img className={s.img} src={image.src} alt="" />
                     </li>)
                   })}

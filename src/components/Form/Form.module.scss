@@ -79,10 +79,54 @@
         background-color: var(--background-btn);
     }
 }
+.error {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--error);
+    & svg {
+        margin-right: 3px;
+        fill: var(--error);
+    }
+}
 .modal{
-    position:absolute; 
+    position:fixed; 
     top:50%; 
     left:50%; 
     transform:translate(-50%, -50%); 
-    width:50%;
+    width:100%;
+    height: 100%;
+    background-color: gray;
+    z-index: 10;
+}
+.modalBox {
+    position: absolute;
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    padding: 15px;
+    background-color: var(--background);
+    border-radius: 5px;
+    width: 300px;
+}
+.modalTitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    color: var(--color-text);
+}
+.modalText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-text);
+}
+.modalClose {
+    margin-top: 5px;
+    border: none;
+    background: none;
+    color: var(--extra-color);
+    cursor: pointer;
 }

@@ -53,7 +53,7 @@ function Form() {
                     onChange={onChange}
                 />
                 {error && <span className={s.error}>
-                    <svg alt="Triangle" width="10" height="10">
+                    <svg alt="Triangle" width="8" height="8">
                         <use href={`${sprite}#icon-triangle`}></use>
                     </svg>{error?.message}</span>}
             </label>
@@ -63,7 +63,13 @@ function Form() {
                     <button className={s.btn} type="submit">Send</button>
                 </form>    
             </div> 
-            {modal && <div className={s.modal}><button onClick={handleClose}>Close</button></div>}           
+            {modal && <div className={s.modal}>                
+                <div className={s.modalBox}>
+                    <p className={s.modalTitle}>Thank you!</p>
+                    <p className={s.modalText}>Your from submission received.</p>
+                    <button className={s.modalClose} onClick={handleClose}>&#8592; Back to our site</button>
+                </div>                
+            </div>}           
         </Container>
     </div>
     
