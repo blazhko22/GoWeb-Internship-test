@@ -9,11 +9,7 @@ import cases5 from '../../images/cases/cases5.jpg';
 import cases6 from '../../images/cases/cases6.jpg';
 import next from '../../images/gallery/next.png';
 import prev from '../../images/gallery/prev.png';
-import close from '../../images/gallery/close.png';
-
-// import "react-image-gallery/styles/scss/image-gallery.scss";
-// import ImageGallery from 'react-image-gallery';
-// import Lightbox from 'react-lightbox-component';
+// import close from '../../images/gallery/close.png';
 import Lightbox from 'react-spring-lightbox';
 
 const images = [
@@ -73,25 +69,22 @@ function BusinessCases() {
                   })}
                 </ul>
                 {isGalleryOpen && <div className={s.lightboxContainer}>
-                  
+                  {/* <img className={s.close} src={close} alt="" /> */}
                   <Lightbox
                     isOpen={isGalleryOpen}
                     onPrev={gotoPrevious}
                     onNext={gotoNext}
                     images={images}
                     currentIndex={currentImageIndex}
-                    
-                    /* Add your own UI */
-                    // renderHeader={() => (<CustomHeader />)}
-                    // renderFooter={() => (<CustomFooter />)}
-                    renderPrevButton={() => (<img className={s.arrowBtn} src={prev} alt="" onClick={gotoPrevious}/>)}
-                    renderNextButton={() => (<img className={s.arrowBtn} src={next} alt="" onClick={gotoNext}/>)}
+                 
+                    renderPrevButton={() => (<div className={s.boxBtn}><img className={s.arrowBtn} src={prev} alt="" onClick={gotoPrevious}/></div>)}
+                    renderNextButton={() => (<div className={s.boxBtn}><img className={s.arrowBtn} src={next} alt="" onClick={gotoNext}/></div>)}
                     // renderImageOverlay={() => (<ImageOverlayComponent >)}
 
                     /* Add styling */
                     // className="cool-class"
                     style={{ background: "grey" }}
-
+                    className="close"
                     /* Handle closing */
                     onClose={handleClose}
 
@@ -105,7 +98,9 @@ function BusinessCases() {
                     //   leave: { transform: "scale(0.75)", opacity: 0 },
                     //   config: { mass: 1, tension: 320, friction: 32 }
                     // }}
-                  ><img className={s.close} src={close} alt="" /></Lightbox>
+                  >
+                    {/* <img className={s.close} src={close} alt="" /> */}
+                  </Lightbox>
                 </div>              
 }
                      

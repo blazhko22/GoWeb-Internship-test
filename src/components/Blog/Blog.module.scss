@@ -3,53 +3,23 @@
 @use "../_styles/colors";
 @use "../_styles/fonts";
 
-// .list {
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//     max-width: 330px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     @include mixins.mediaquery ("tablet", min) {
-//         flex-wrap: nowrap;
-//     }
-// }
-// .item {
-//     margin-right: 20px;
-//     margin-bottom: 20px;
-//     &:nth-child(2n) {
-//         margin-right: 0;
-//         @include mixins.mediaquery ("tablet", min) {
-//             margin-right: 30px;
-//         }
-//         @include mixins.mediaquery ("desktop", min) {
-//             margin-right: 50px;
-//         }
-//     }
-//     &:nth-child(n + 3) {
-//         margin-bottom: 0;
-//     }
-//     @include mixins.mediaquery ("tablet", min) {
-//         margin-bottom: 0;
-//         margin-right: 30px;
-//         @include mixins.mediaquery ("desktop", min) {
-//             margin-right: 50px;
-//         }
-//         &:last-child {
-//             margin-right: 0;
-//         }
-//     }
-// }
-// .svg {
-//     @include mixins.mediaquery ("desktop", min) {
-//         width: 200px;
-//         height: 40px;
-//     }
-// }
 .blog {
   @include mixins.mediaquery ("tablet", min) {
     display: flex;
     flex-direction: row-reverse;
+  }
+}
+.blog_img {
+  width: 100%;
+  height: 247px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff url("../../images/home/blog.jpg") no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mixins.mediaquery ("tablet", min) {
+      height: auto;
   }
 }
 .blog_box {
@@ -61,12 +31,18 @@
       padding-top: 59px;
       padding-bottom: 59px;
     }
+    @include mixins.mediaquery ("desktop", min) {
+      padding: 80px 0;
+    }
   }
   .box {
     display: flex;
     flex-direction: column;
     @include mixins.mediaquery ("tablet", min) {
       width: 336px;
+    }
+    @include mixins.mediaquery ("desktop", min) {
+      width: 642px;
     }
   }
   .question {

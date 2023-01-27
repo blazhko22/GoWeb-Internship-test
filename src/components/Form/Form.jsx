@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Container from "../Container";
-import contact from '../../images/home/contact.jpg';
 import {useForm, Controller} from "react-hook-form";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import sprite from '../../images/icons.svg';
 import s from './Form.module.scss';
 
@@ -18,9 +16,7 @@ function Form() {
         setValue('email', '')
     }
     return <div id="form" className={s.box}>
-        <div>
-            <img className={s.img} src={contact} alt="" />
-        </div>
+        <div className={s.img}></div>
         <Container>
             <div className={s.box_form}>
                 <h4 className={s.title}>Request Callback</h4>

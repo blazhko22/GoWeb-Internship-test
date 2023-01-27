@@ -1,16 +1,10 @@
 import React from "react";
 import  Container from "../Container";
-// import people from '../../images/home/people.jpg';
-import people from '../../images/home/people@2x.jpg';
 import s from './Solutions.module.scss';
 
 function Solutions() {
     return <div id="about" className={s.solutions}>
-      <div className={s.solutions_img}>
-        <img className={s.item_img} alt="People" 
-          src={people}
-        />
-      </div>
+      <div className={s.solutions_img}></div>
       <div className={s.solutions_box}>
         <Container> 
           <div className={s.box}>

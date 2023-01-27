@@ -5,46 +5,22 @@
 
 .nav {
     margin-top: 16px;
-//   @include mixins.mediaquery ("tabletPhone", min) {
-//     margin-left: 20px;
-//   }
   @include mixins.mediaquery ("tablet", min) {
     margin-top: 0;
   }
-//   @include mixins.mediaquery ("desktop", min) {
-//     margin-left: 100px;
-//   }
 }
 .list {
   display: flex;
   justify-content: center;
-//   margin-top: 15px;
-//   @include mixins.mediaquery ("desktop", min) {
-    // margin-top: 37px;
-//   }
 }
 .item {
   padding-left: 6px;
   padding-right: 6px;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // transition-property: border-bottom;
   &:hover,
   &:focus {
     border-bottom: 2px solid var(--extra-color);
     margin-bottom: -2px;
   }
-    // color: var(--extra-color);
-//   margin-left: 5px;
-//   &:first-child {
-//     margin-left: 0;
-//   }
-//   @include mixins.mediaquery ("tabletPhone", min) {
-//     margin-left: 10px;
-//   }
-//   @include mixins.mediaquery ("desktop", min) {
-//     margin-left: 20px;
-//   }
   & a {
     font-weight: 400px;
     font-size: 16px;
@@ -55,9 +31,17 @@
       font-size: 18px;
       line-height: 25px;
     }
-//     @include mixins.mediaquery ("desktop", min) {
-//       font-size: 21px;
-//     }
+  } 
+  @include mixins.mediaquery ("tablet", min) {
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
-  
+  @include mixins.mediaquery ("desktop", min) {
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }

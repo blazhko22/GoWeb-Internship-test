@@ -1,16 +1,10 @@
 import React from "react";
 import  Container from "../Container";
-import blog from '../../images/home/blog@2x.jpg';
 import s from './Blog.module.scss';
-// import sprite from '../../images/icons.svg';
 
 function Blog() {
     return <div id="blog" className={s.blog}>
-    <div className={s.blog_img}>
-      <img alt="Blog" 
-        src={blog}
-      />
-    </div>
+    <div className={s.blog_img}></div>
     <div className={s.blog_box}>
       <Container> 
         <div className={s.box}>
